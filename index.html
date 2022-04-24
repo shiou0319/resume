@@ -1,44 +1,210 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>resume</title>
-  <link rel="stylesheet" href="./style.css">
+<html>
+	<style>
+	* {
+	border: black 0px solid;
+	margin:0;
+	color:rgb(96, 77, 66);
+	}
+	
+	html,body {
+	height:100%; 
+	margin:0; 
+	padding:10% 20%;
+	border: 0;
+	}
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="main">
-  <div class="left">
-    <div class="title">
-      <div>picture</div>
-      <div>ch name</div>
-      <div>en name</div>
-    </div>
-    
-    <div class ="contact">
-      <div>mail</div>
-      <div>mobile</div>
-    </div>
-    
-    <div class ="brief">
-      <h3>自我介紹</h3>
-      <hr/>
-      <article></article>
-    </div>
-    
-    <div class="skill">
-      <h3>技能</h3>
-      <hr/>
-      <h5>英文能力</h5>
-      <h5>文書處理</h5>
-      <h5>其他軟體</h5>
-    </div>
-  </div>  
-  <div class="middle">middle</div>
-  <div class="right">right</div>
-</div>
-<!-- partial -->
-  
-</body>
+	.main {
+	height:100%; 
+	display: flex;
+	background-image:url("2.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	}
+	
+	.left {
+	flex:40%
+	}
+	
+	.photo	{
+	text-align:center;
+	}
+	
+	.name	{
+	margin-left:10px;
+	margin-bottom:20px;
+	}
+	
+	hr	{
+	border:1px solid rgb(150, 120, 103);
+	}
+	
+	hr.a	{
+	width:100px;
+	}
+	
+	hr.b	{
+	width:170px;
+	}
+	
+	hr.c	{
+	width:55px;
+	}
+	
+	hr.d	{
+	width:75px;
+	}
+	
+	h1	{
+	margin-bottom:10px;
+	}
+	
+	h5	{
+	margin-top:10px;
+	color:rgb(150, 120, 103);
+	}
+	
+	
+	.img1 {
+	weight:200px;
+	height:200px;
+	border-radius:80px;
+	}
+	
+	h4.a	{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color:rgb(210, 199, 187);
+	height:30px;
+	}
+	
+	.profile2	{
+	text-align:center;
+	margin:10px;
+	margin-bottom:20px;
+	}
+	
+	.img2 {
+	weight:15px;
+	height:15px;
+	margin:2.5px;
+	margin-right:10px;
+	}
+	
+	h6.a	{
+	display: flex;
+	align-items: center;
+	margin:13px;
+	}
+	
+	h6	{
+	margin:5px;
+	}
+	
+	
+	.right {
+	flex:60%;
+	margin-left:20px;
+	margin-top:20px;
+	}
+	
+	h4.b {
+	margin-top:10px;
+	margin-bottom:10px;
+	}
+	
+	</style>
+	<head>
+		<title>resume</title>
+	</head>
+	<body>
+		<div class="main">
+			<!--左邊-->
+			<div class="left">
+				<div class="photo">
+				<img class="img1" src="3.png">
+				</div>
+				
+				<div class="name">
+				<h1>ISABEL<br>MERCADO</h1>
+				<hr>
+				<h5><i>Social Media Specialist</i></h5>
+				</div>
+				
+				<div class="profile1">
+				<h4 class="a">PROFILE</h4>
+				</div>
+				
+				<div class="profile2">
+				<h6 class="a">A Social Media Specialist is <br>responsible for 
+				creating and <br>publishing content on all social <br>
+				media platforms to grow an <br>audience, build brand 
+				awareness,<br> and ultimately, boost sales.
+				</h6>
+				</div>
+				
+				<div class="contact1">
+				<h4 class="a">CONTACT</h4>
+				</div>
+				
+				<div class="contact2">
+				<h6 class="a"><img class="img2" src="4.png">+123-456-7890</h6>
+				<h6 class="a"><img class="img2" src="5.png">123@gmail.com</h6>
+				<h6 class="a"><img class="img2" src="6.png">www.123.com</h6>
+				<h6 class="a"><img class="img2" src="7.png">123 Anywhere.St., Any City</h6>
+				</div>
+			</div>
+			<!--右邊-->
+			<div class="right">
+				<div class="education">
+				<h4 class="b">EDUCATION</h4>
+				<hr class="a">
+				<h5>Bachelor of Arts, Major in Communication<br>(2014-2018)</h5>
+				<h6><i>Borcelle University</i></h6>
+				<ul>
+					<li><h6>GPA:3.89</h6>
+				</ul>
+				</div>
+				
+				<div class="experience">
+				<h4 class="b">WORK EXPERIENCE</h4>
+				<hr class="b">
+				<h5>Communication Intern</h5>
+				<h6><i>Hanover and Tyke (2018-2019)</i></h6>
+				<ul>
+					<li><h6>懶得打了懶得打了懶得打了懶得打了</h6>
+					<li><h6>懶得打了懶得打了懶得打了懶得打了</h6>
+				</ul>
+				<h5>Social Media Specialist</h5>
+				<h6><i>Studio Shodwe (2019-2021)</i></h6>
+				<ul>
+					<li><h6>懶得打了懶得打了懶得打了懶得打了</h6>
+					<li><h6>懶得打了懶得打了懶得打了懶得打了</h6>
+					<li><h6>懶得打了懶得打了懶得打了懶得打了</h6>
+				</ul>
+				</div>
+				
+				<div class="skill">
+				<h4 class="b">SKILL</h4>
+				<hr class="c">
+				<ul>
+					<li><h6>懶得打了</h6>
+					<li><h6>懶得打了</h6>
+					<li><h6>懶得打了</h6>
+					<li><h6>懶得打了</h6>
+					<li><h6>懶得打了</h6>
+				</ul>
+				</div>
+				
+				<div class="awards">
+				<h4 class="b">AWARDS</h4>
+				<hr class="d">
+				<h5>Best Intern</h5>
+				<h6><i>懶得打了</i></h6>
+				<h6><i>懶得打了</i></h6>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
